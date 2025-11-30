@@ -67,6 +67,7 @@ def finalizedinfo(e):
     display(f"{subjects[9]}: {gradeJ}", target='subjectJ')
     display(f"Gen Ave: {genave}", target="output")
 
+# variables for each club
 
 club_info = {
     "Glee Club":{
@@ -94,11 +95,17 @@ club_info = {
     }
 }
 
+# function for displaying data
+
 def clubdetails(e):
+
+    # get value
 
     values = document.getElementById('cluboptions').value
     data_display = club_info[values]
     document.getElementById("output").innerHTML = ""
+
+    # display value
 
     display(f"{values}", target="output")
     display(f"Description: {data_display['Description']}", target="output")

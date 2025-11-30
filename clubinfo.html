@@ -43,15 +43,15 @@
     </ul>
   </div>
 
-    <div class="container-fluid body-container row">
+    <div class="container-fluid body-container row"> <!-- body for container -->
 
-        <div class="col-sm-2"></div>
+        <div class="col-sm-2"></div> <!-- column for centering -->
 
-        <div class="col-sm-8">
+        <div class="col-sm-8"> <!-- main column -->
 
 
-				<div class="header">
-	 			<h1>CLUB INFORMATION</h1>
+				<div class="header"> <!-- header for instructions, same as calculator -->
+	 			<h1>CLUB INFORMATION</h1> 
                 <details>
 				<summary>Instructions...</summary>
 					<i>If you are interested in joining any of our clubs, click on any of the options in our dropdown to know more! If you want to apply to these clubs, please speak with your advisor.  </i>
@@ -59,12 +59,12 @@
 	 				<hr>
 				</div>
 
-         <div class="card">
+         <div class="card"> <!-- skills test -->
 
          <div class="clubdropdown">
             <form>
 
-                <label for="cluboptions">Choose your club:</label>
+                <label for="cluboptions">Choose your club:</label> <!-- options for clubs, dropdown form -->
 					<select class="form-control" name="clubs" id="cluboptions">
 						<option disabled selected value="select">Select</option>
 						<option value="Glee Club">Glee Club</option>
@@ -72,14 +72,17 @@
                         <option value="Math Club">Math Club</option>
                     </select>
                    
-                 <input type="button" value="Get Details" py-click="clubdetails" class="infobutton">
+                 <input type="button" value="Get Details" py-click="clubdetails" class="infobutton"> <!-- button for getting details of individual clubs -->
             
 			</form>
          </div>
 
-         </div>
+         </div> 
 
-         <div id="output"></div>
+         <div class="card"> <!-- output section-->
+            <h3>Club Details</h3>
+                <p id="output"></p>
+         </div>
 
         </div>
 
