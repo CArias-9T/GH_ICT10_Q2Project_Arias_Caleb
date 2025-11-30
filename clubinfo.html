@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to our School Page!</title>
+
+    	<!-- SETUP BOOTSTAP: link to Bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+     <!-- link to Python -->
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+
+    <!-- Add style -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+    
+</head>
+<body> 
+
+      <div class="navb"><!-- div for nav bar-->
+     <ul class="nav nav-pills mx-auto"> <!-- nav bar, unordered list-->
+        <li class="nav-item "> <!-- each item is a list item, contains the logo and links -->
+            <img src="oblogo.png" class="logo1"> 
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="calculator.html" >GWA Calculator</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="clubinfo.html">Club Information</a>
+        </li> 
+
+        <!--search bar -->
+
+        <form action="/search" method="get"> <!-- makes what is searched appear in URL, nonfunctional-->
+          <input type="search" class="search" placeholder=" Search..." name="query">
+          <button type="submit" class="btn subtn">⌕</button>
+        </form>
+    </ul>
+  </div>
+
+    <div class="container-fluid body-container row">
+
+        <div class="col-sm-2"></div>
+
+        <div class="col-sm-8">
+
+
+				<div class="header">
+	 			<h1>CLUB INFORMATION</h1>
+                <details>
+				<summary>Instructions...</summary>
+					<i>If you are interested in joining any of our clubs, click on any of the options in our dropdown to know more! If you want to apply to these clubs, please speak with your advisor.  </i>
+			    </details>
+	 				<hr>
+				</div>
+
+         <div class="card">
+
+         <div class="clubdropdown">
+            <form>
+
+                <label for="cluboptions">Choose your club:</label>
+					<select class="form-control" name="clubs" id="cluboptions">
+						<option disabled selected value="select">Select</option>
+						<option value="Glee Club">Glee Club</option>
+						<option value="Band Club">Band Club</option>
+                        <option value="Math Club">Math Club</option>
+                    </select>
+                   
+                 <input type="button" value="Get Details" py-click="clubdetails" class="infobutton">
+            
+			</form>
+         </div>
+
+         </div>
+
+         <div id="output"></div>
+
+        </div>
+
+         <div class="col-sm-2"></div>
+
+    </div>
+
+      <!-- footer-->
+
+    <div class="container-fluid footer">
+		<p id="footer">Caleb Arias | 10-Topaz</p>
+	</div>
+
+
+    <!-- for pyscript-->
+
+    <script type="py" src="main.py"></script>
+
+
+
+</body>
+</html>
+

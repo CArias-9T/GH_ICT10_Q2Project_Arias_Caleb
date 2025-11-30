@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to OBMC!</title>
+
+    	<!-- SETUP BOOTSTAP: link to Bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+     <!-- link to Python -->
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+
+    <!-- Add style -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+    
+</head>
+<body> 
+
+      <div class="navb"> <!-- div for nav bar-->
+     <ul class="nav nav-pills mx-auto"> <!-- nav bar, unordered list-->
+        <li class="nav-item"> <!-- each item is a list item, contains the logo and links -->
+            <img src="oblogo.png" class="logo1"> 
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="calculator.html" >GWA Calculator</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="clubinfo.html">Club Information</a>
+        </li> 
+
+        <!--search bar -->
+
+        <form action="/search" method="get"> <!-- makes what is searched appear in URL, nonfunctional-->
+          <input type="search" class="search" placeholder=" Search..." name="query">
+          <button type="submit" class="btn subtn">⌕</button>
+        </form>
+    </ul>
+  </div>
+
+  <div class="container body-container"> 
+  <div class="row">  
+    <div class="col-sm-6 imgdiv">
+		<img src="obsampleimg.png" alt="obimg" class="sampleimg img-responsive img-thumbnail">
+	</div>
+		<div class="col-sm-6" id="history">
+			<h1>Welcome to OBMC!</h1>
+
+            <hr>
+
+			<h3 >History of OBMC</h3>
+			<p> Operation Brotherhood Montessori Center (OBMC) was first founded in 1966 by Dr. Preciosa Soliven, under the ideals of a previous organization simply named Operation Brotherhood (OB), started by Oscar J. Arellano in 1954. She founded this school under OB's priciples, along with the added ideals of Dr. Maria Montessori and the Montessori method of Education. We have worked under these principles for over 6 decades, and we hope to continue to push them forward.</p> 
+
+			<hr>
+
+			<h3>About Us</h3>
+			<p>Us at O.B Montessori Center push forward the Montessori method in the Philippines, as way to prepare and educate our youth for the future. Our goal is to morph our students into individuals who can strive to push for a better future––indepedent, productive students prepared to face what the future holds. If you would like to join our community, you are gladly welcome into our circle! 
+            </p>
+		</div>
+  </div>
+  </div>
+
+
+    <!-- footer-->
+
+    <div class="container-fluid footer">
+		<p id="footer">Caleb Arias | 10-Topaz</p>
+	</div>
+
+</body>
+</html>
+
